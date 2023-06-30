@@ -1,14 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-grandparent',
-  templateUrl: './grandparent.component.html'
+  templateUrl: './grandparent.component.html',
+  styleUrls: ['./grandparent.component.scss']
 })
-export class GrandparentComponent implements OnInit {
+export class GrandparentComponent {
 
-  constructor() { }
-
-  ngOnInit() {
+  onButtonClick(): void {
+    console.log('Button click event emitted!');
   }
 
 }
